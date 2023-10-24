@@ -26,7 +26,7 @@ The number of seconds to wait before the next retry. Defaults to 5.
 
 ```yaml
 name: Run command
-uses: interlok-tooling/retry-command@main
+uses: interlok-tooling/retry-command@v1
   with:
     command: ./gradlew check
 ```
@@ -35,7 +35,7 @@ uses: interlok-tooling/retry-command@main
 
 ```yaml
 name: Run command
-uses: interlok-tooling/retry-command@main
+uses: interlok-tooling/retry-command@v1
   with:
     command: ./gradlew check
     max_retries: 3
@@ -46,7 +46,7 @@ uses: interlok-tooling/retry-command@main
 
 ```yaml
 name: Run command
-uses: interlok-tooling/retry-command@main
+uses: interlok-tooling/retry-command@v1
   with:
     command: ./gradlew check
     max_retries: 3
