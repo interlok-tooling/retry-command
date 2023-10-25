@@ -27,8 +27,8 @@ The number of seconds to wait before the next retry. Defaults to 5.
 ```yaml
 name: Run command
 uses: interlok-tooling/retry-command@v1
-  with:
-    command: ./gradlew check
+with:
+  command: ./gradlew check
 ```
 
 ## With max_retries and retry_wait
@@ -36,10 +36,10 @@ uses: interlok-tooling/retry-command@v1
 ```yaml
 name: Run command
 uses: interlok-tooling/retry-command@v1
-  with:
-    command: ./gradlew check
-    max_retries: 3
-    retry_wait: 10
+with:
+  command: ./gradlew check
+  max_retries: 3
+  retry_wait: 10
 ```
 
 ## With environment variables
@@ -47,10 +47,10 @@ uses: interlok-tooling/retry-command@v1
 ```yaml
 name: Run command
 uses: interlok-tooling/retry-command@v1
-  with:
-    command: ./gradlew check
-    max_retries: 3
-    retry_wait: 10
-  env:
-    VAR_NAME: varValue
+with:
+  command: ./gradlew check
+  max_retries: 3
+  retry_wait: 10
+env:
+  VAR_NAME: varValue
 ```
