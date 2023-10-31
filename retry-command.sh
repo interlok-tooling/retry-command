@@ -10,7 +10,7 @@ retry() {
   local cmd="$3"
   local currentRetry="${4:-1}" # 4th arg or default value '1'
 
-  echo "::notice ::Running command '$cmd'"
+  echo "Running command '$cmd'"
 
   # Disable set -e
   set +e
